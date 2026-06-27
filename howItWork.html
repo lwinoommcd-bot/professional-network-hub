@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="container mx-auto py-20 px-6">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- left-content -->
+            <!-- w-fit => it take as content width -->
+            <div class="gap-8 flex-col items-center flex">
+                <h2 class="text-5xl md:text-6xl font-semibold mb-8 flex md:w-full md:px-20">How It Works</h2>
+                <!-- Sign Up and create Account -->
+                <div class="flex items-center gap-6">
+                    <span class="text-7xl font-bold text-gray-200">01</span>
+                    <!-- svg-icons -->
+                    <div class="border border-gray-100 shadow-lg p-8 rounded-3xl flex items-center gap-4  w-fit">
+                        <div class="p-3 bg-blue-50 rounded-full text-blue-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Sign Up and create Account</h3>
+                            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur elit.
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upload Your Portfolio -->
+                <div class="flex items-center gap-6 ">
+                    <div class="border border-gray-100 shadow-lg p-8 rounded-3xl flex items-center gap-4 w-fit">
+                        <div class="p-3 bg-orange-50 rounded-full text-orange-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Upload Your Portfolio</h3>
+                            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur elit.</p>
+                        </div>
+                    </div>
+                    <span class="text-7xl font-bold text-gray-200">02</span>
+                </div>
+
+                <!-- Get Discovered -->
+                <div class="flex items-center gap-6">
+                    <span class="text-7xl font-bold text-gray-200">03</span>
+                    <div class="border border-gray-100 shadow-lg p-8 rounded-3xl flex items-center gap-4 w-fit">
+                        <div class="p-3 bg-purple-50 rounded-full text-purple-600">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Get Discovered</h3>
+                            <p class="text-gray-500 text-sm">Lorem ipsum dolor sit amet, consectetur elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- right-container -->
+            <div class="grid md:grid-cols-[40%_60%] gap-6 h-full w-full items-start">
+                <!-- men-img -->
+                <img src="https://img.freepik.com/free-photo/man-using-laptop-thinking_23-2147785055.jpg"
+                    class="rounded-3xl object-cover h-96 w-full" alt="Working">
+                <!-- woman-img -->
+                <div class="relative h-full w-full">
+                    <img src="https://img.freepik.com/free-photo/close-up-smiley-woman-desk_23-2149300654.jpg"
+                        class="rounded-3xl object-cover h-[570px] w-full" alt="Professional">
+
+                    <div
+                        class="absolute w-full border border-gray-100 mt-8 md:bottom-12 md:left-[-300px] bg-white p-6 md:py-4 md:px-8 md:w-fit rounded-3xl shadow-xl flex justify-center items-center gap-4 z-10">
+                        <div class="flex -space-x-2">
+                            <div class="w-16 h-16 rounded-full bg-gray-300 border-2 border-white"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAV3Sh9-s8TXnck5nmmWDiOxlS_FLmnWKwlA&s"
+                                    class="object-cover rounded-full w-full h-full" alt=""></div>
+                            <div class="w-16 h-16 rounded-full bg-gray-400 border-2 border-white"><img
+                                    src="https://d2xhtkw2dlln4s.cloudfront.net/wp-content/uploads/2018/10/Productive-Day-at-Work.jpg"
+                                    class="object-cover rounded-full w-full h-full" alt=""></div>
+                            <div class="w-16 h-16 rounded-full bg-gray-500 border-2 border-white"><img
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQACJYIx5Q_11MKKqXI4aoEsIMYDKVPKJ1Usw&s"
+                                    class="object-cover rounded-full w-full h-full" alt=""></div>
+                        </div>
+                        <div class="">
+                            <p class="font-bold text-lg text-green-500">10K +</p> 
+                            <p class="text-sm text-gray-500">Job Seekers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

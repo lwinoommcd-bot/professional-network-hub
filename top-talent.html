@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <section class="container mx-auto py-16 mt-20 border">
+        <!-- Top-Talent Section -->
+         <!-- slide-section -->
+        <div class="flex justify-between  items-center mb-10 border px-5">
+            <h2 class="text-2xl md:text-3xl md:text-4xl font-bold text-gray-900">Top Talent portfolio Showcase</h2>
+            <div class="flex gap-4">
+                <a class="p-4 rounded-full bg-gray-100 hover:bg-gray-200 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="h-5 w-5 md:size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+                    </svg>
+                </a> <a class="p-4 rounded-full bg-blue-600 text-white hover:bg-blue-700 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class=" h-5 w-5 md:size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Photo-Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5">
+            <!-- first-img -->
+            <div class="relative h-[500px] md:h-[550px] rounded-3xl overflow-hidden group">
+                <!-- inset-0 =>  top-0, left-0, right-0, bottom-0 -->
+                <img src="https://nextdynamix.com/wp-content/uploads/2023/09/customigation_1-WptG6Lhs.webp"
+                    alt="Floyd Miles" class="absolute inset-0 w-full h-full object-cover">
+                <!-- to-transparent => to colorless -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 text-white">
+                    <p class="font-bold text-xl">Floyd Miles</p>
+                    <p class="text-sm opacity-90">Graphics Designer</p>
+                </div>
+                <button
+                    class="absolute bottom-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center text-blue-600">▶</button>
+            </div>
+
+            <!-- second-img -->
+            <div class="relative hidden md:hidden md:grid-cols-1 lg:block h-[500px] md:h-[550px] rounded-3xl overflow-hidden group">
+                <img src="figma-prj/draw.png" alt="Floyd Miles" class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 text-white">
+                    <p class="font-bold text-xl">Floyd Miles</p>
+                    <p class="text-sm opacity-90">Graphics Designer</p>
+                </div>
+                <button
+                    class="absolute bottom-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center text-blue-600">▶</button>
+            </div>
+
+            <!-- third-img -->
+            <div class="relative hidden md:hidden md:grid-cols-1 lg:block h-[500px] md:h-[550px] rounded-3xl overflow-hidden group">
+                <img src="https://tower-tech.co.uk/wp-content/uploads/2023/11/it3.webp" alt="Floyd Miles"
+                    class="absolute inset-0 w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 text-white">
+                    <p class="font-bold text-xl">Floyd Miles</p>
+                    <p class="text-sm opacity-90">Graphics Designer</p>
+                </div>
+                <button
+                    class="absolute bottom-6 right-6 w-12 h-12 bg-white rounded-full flex items-center justify-center text-blue-600">▶</button>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

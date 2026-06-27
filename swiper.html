@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div
+                class="md:w-3/5 bg-[#1e293b] md:h-96 lg:h-[500px] text-white p-10  shadow-md rounded-3xl flex flex-col justify-between">
+                <div>
+                    <p class="text-sm uppercase tracking-widest opacity-70 mb-10 text-center">Lorem ipsum dolor . Quos sequi,</p>
+                    <h1 class="md:text-xl lg:text-4xl text-center font-medium lg:leading-snug">
+                        Lorem ipsum dolor sit, amet consectetur <br> amet consectetur adipisicing elit. <br>amet consectetur adipisicing elit. <br> Aperiam voluptate.
+                    </h1>
+                </div>
+                <div class="flex gap-4 mt-10 justify-center">
+                    <button class="p-4 rounded-full bg-white/10 hover:bg-white/20 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button class="p-4 rounded-full bg-blue-600 hover:bg-blue-700 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+        <div
+                class="md:w-3/5 bg-[#1e293b] md:h-96 lg:h-[500px] text-white p-10  shadow-md rounded-3xl flex flex-col justify-between">
+                <div>
+                    <p class="text-sm uppercase tracking-widest opacity-70 mb-10 text-center">Lorem ipsum dolor . Quos sequi,</p>
+                    <h1 class="md:text-xl lg:text-4xl text-center font-medium lg:leading-snug">
+                        Lorem ipsum dolor sit, amet consectetur <br> amet consectetur adipisicing elit. <br>amet consectetur adipisicing elit. <br> Aperiam voluptate.
+                    </h1>
+                </div>
+                <div class="flex gap-4 mt-10 justify-center">
+                    <button class="p-4 rounded-full bg-white/10 hover:bg-white/20 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button class="p-4 rounded-full bg-blue-600 hover:bg-blue-700 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+      </div>
+      <div class="swiper-slide">
+        <div
+                class="md:w-3/5 bg-[#1e293b] md:h-96 lg:h-[500px] text-white p-10  shadow-md rounded-3xl flex flex-col justify-between">
+                <div>
+                    <p class="text-sm uppercase tracking-widest opacity-70 mb-10 text-center">Lorem ipsum dolor . Quos sequi,</p>
+                    <h1 class="md:text-xl lg:text-4xl text-center font-medium lg:leading-snug">
+                        Lorem ipsum dolor sit, amet consectetur <br> amet consectetur adipisicing elit. <br>amet consectetur adipisicing elit. <br> Aperiam voluptate.
+                    </h1>
+                </div>
+                <div class="flex gap-4 mt-10 justify-center">
+                    <button class="p-4 rounded-full bg-white/10 hover:bg-white/20 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                        </svg>
+                    </button>
+                    <button class="p-4 rounded-full bg-blue-600 hover:bg-blue-700 transition">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
