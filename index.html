@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         html,
         body {
@@ -53,11 +59,11 @@
     </style>
 </head>
 
-<body class="scrollbar-visible">
+<body class="">
 
     <!-- Project Notes -->
 
-    <!-- Navbar Section start -->
+    <!-- Navbar Section start[Using flowbite] -->
     <header class="w-full bg-cover bg-[center_top_0px] pb-10"
         style="background-image:linear-gradient(to bottom, transparent 80%, #f9fafb 100%), url('figma-prj/navbg.png');">
         <!-- nav-start -->
@@ -184,7 +190,7 @@
 
 
 
-    <!-- photo-slide Section start-->
+    <!-- photo-slide Section start (using AI)-->
     <div class="w-full py-8 bg-gray-50 overflow-hidden">
 
         <div class="flex gap-6 px-4 md:px-6 lg:px-8
@@ -335,7 +341,7 @@
 
             </div>
 
-            <!-- designer list on mobile -->
+            <!-- designer list on mobile version using tailwind-menu -->
             <div class="w-full border border-gray-200 rounded-xl mb-5 mx-1 bg-gray-100 md:hidden">
 
                 <label for="select" class="block text-sm/6 font-medium text-black"></label>
@@ -344,9 +350,9 @@
                         class="grid w-full cursor-default grid-cols-1 rounded-md bg-white/5 py-1.5 pl-3 pr-2 text-left  outline outline-1 -outline-offset-1 outline-white/10 focus-visible:outline focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-indigo-500 sm:text-sm/6">
                         <el-selectedcontent class="col-start-1 row-start-1 flex items-center gap-3 pr-6">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                                stroke="currentColor" class="size-6">
+                                stroke="currentColor" class="size-6 text-blue-400">
                                 <path stroke-linecap="round" stroke-linejoin="round"
-                                    d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                                    d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25A2.25 2.25 0 0 1 13.5 8.25V6ZM13.5 15.75A2.25 2.25 0 0 1 15.75 13.5H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
                             </svg>
 
                             <span class="block truncate">Choose Designer</span>
@@ -365,10 +371,11 @@
                             class="group/option relative cursor-default select-none py-2 pl-3 pr-9 focus:bg-indigo-500 focus:text-white focus:outline-none [&:not([hidden])]:block">
                             <div class="flex items-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    stroke-width="1.5" stroke="currentColor" class="size-6 text-blue-400">
+                                    stroke-width="1.5" stroke="currentColor" class="size-6">
                                     <path stroke-linecap="round" stroke-linejoin="round"
-                                        d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25A2.25 2.25 0 0 1 13.5 8.25V6ZM13.5 15.75A2.25 2.25 0 0 1 15.75 13.5H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                                        d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
                                 </svg>
+
                                 <span
                                     class="ml-3 block truncate font-normal group-aria-selected/option:font-semibold">Developer</span>
                             </div>
@@ -792,6 +799,7 @@
 
 
     <!--  why choose masters in me -->
+    <!-- (sayar win pyae helped for this section to responsive )  -->
     <div class="container mx-auto py-10 px-6 text-center">
         <h2 class="text-4xl font-bold mb-4">Why Choose Masters in Me?</h2>
         <p class="text-gray-500 max-w-lg mx-auto">
@@ -800,12 +808,14 @@
     </div>
 
     <section class="relative container mx-auto py-20 px-3 xl:px-6  text-center">
+        <!-- bg-img div -->
         <div class="absolute inset-0 flex items-center justify-center z-0">
             <img src="figma-prj/back-feature.webp"
                 class="w-[700px] h-[700px] md:h-[400px] lg:w-[600px] lg:h-[600px] xl:w-[800px] xl:h-[800px] object-contain lg:object-cover opacity-40"
                 alt="bg">
         </div>
 
+        <!-- content -->
         <div
             class="relative z-10 grid grid-cols-1 md:grid-cols-3 items-center justify-around gap-8 xl:gap-8 xl:h-[700px]">
             <!-- left content -->
@@ -843,9 +853,10 @@
                         <p class="text-gray-500 text-sm ">Lorem, ipsum dolor.</p>
                     </div>
                 </div>
-                <!-- https://phosphoricons.com/ -->
-                <div class="text-right text-6xl md:block hidden ">
-                    <i class="ph ph-arrow-bend-down-right text-blue-500"></i>
+                <!-- using arrow icon from  https://phosphoricons.com/ -->
+                <div class="absolute md:bottom-[-20px] md:left-[200px] lg:bottom-20 lg:left-[350px] text-right text-6xl md:block hidden ">
+                    <img src="figma-prj/Arrow-1.png" class="md:w-12 md:h-12 lg:w-auto lg:h-auto" alt="">
+                    <!-- <i class="ph ph-arrow-bend-down-right text-blue-500"></i> -->
                 </div>
             </div>
 
@@ -862,8 +873,9 @@
             <!-- https://phosphoricons.com/ -->
             <div
                 class="flex col-span-1 flex-col relative justify-center md:mb-0 xl:mb-[210px] items-center gap-5 xl:pr-28 xl:pl-5">
-                <div class="flex absolute -top-10 -left-5 xl:left-2 text-6xl text-left md:block hidden">
-                    <span><i class="ph ph-arrow-bend-double-up-left text-blue-500"></i></span>
+                <div class="flex absolute -top-14 -left-5 xl:left-2 text-6xl text-left md:block hidden">
+                    <img src="figma-prj/Arrow.png" alt="">
+                    <!-- <span><i class="ph ph-arrow-bend-double-up-left text-blue-500"></i></span> -->
                 </div>
                 <!-- Networking -->
                 <!-- w-fit => it take as content size -->
@@ -1016,7 +1028,7 @@
                             alt="Client Logo" class="w-8 h-8 object-contain">
                     </div>
                     <div
-                        class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center hover:shadow-md transition-all cursor-pointer">
+                        class=" w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center hover:shadow-md transition-all cursor-pointer">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrK119yU9UpNb57y6LozJOAkNsZi4UM1a6uDvTD1EMOQ&s=10"
                             alt="Client Logo" class="w-8 h-8 object-contain">
                     </div>
@@ -1032,12 +1044,12 @@
                             alt="Client Logo" class="w-8 h-8 object-contain">
                     </div>
                     <div
-                        class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center hover:shadow-md transition-all cursor-pointer">
+                        class="hidden md:flex w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center hover:shadow-md transition-all cursor-pointer">
                         <img src="https://cloud.gmelius.com/public/logos/google/Google_Drive_Logo_512px.png"
                             alt="Client Logo" class="w-8 h-8 object-contain">
                     </div>
                     <div
-                        class="w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center hover:shadow-md transition-all cursor-pointer">
+                        class="hidden md:flex w-16 h-16 bg-white rounded-full shadow-sm flex items-center justify-center hover:shadow-md transition-all cursor-pointer">
                         <img src="https://images.deliveryhero.io/image/foodpanda/groceries-landing/pandamart.png"
                             alt="Client Logo" class="w-8 h-8 object-contain">
                     </div>
@@ -1112,14 +1124,15 @@
             </div>
 
 
-            <!-- right-container -->
+            <!-- right-photo container  -->
             <div class="grid  md:grid-cols-[40%_60%] gap-6 h-full w-full items-start">
                 <!-- men-img -->
                 <img src="figma-prj/hero2.jpeg" class="rounded-3xl object-cover h-96 w-full" alt="Working">
                 <!-- woman-img -->
                 <div class="relative h-full w-full">
-                    <img src="figma-prj/woman.png" class="rounded-3xl object-cover h-[570px] w-full" alt="Professional">
-
+                    <img src="figma-prj/woman.png" class="rounded-3xl object-cover h-[450px] md:h-[570px] w-full"
+                        alt="Professional">
+                    <!-- img-3 -->
                     <div
                         class="absolute w-full border border-gray-100 mt-8 md:bottom-12 md:left-[-300px] bg-white p-6 md:py-4 md:px-8 md:w-fit rounded-3xl shadow-xl flex justify-center items-center gap-4 z-10">
                         <div class="flex -space-x-2">
@@ -1171,7 +1184,7 @@
         <!-- Photo-Section -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5">
             <!-- first-img -->
-            <div class="relative h-[500px] md:h-[550px] rounded-3xl overflow-hidden group">
+            <div class="relative h-[500px] md:h-[550px] rounded-3xl overflow-hidden">
                 <!-- inset-0 =>  top-0, left-0, right-0, bottom-0 -->
                 <img src="https://nextdynamix.com/wp-content/uploads/2023/09/customigation_1-WptG6Lhs.webp"
                     alt="Floyd Miles" class="absolute inset-0 w-full h-full object-cover">
@@ -1186,7 +1199,7 @@
             </div>
 
             <!-- second-img -->
-            <div class="relative h-[500px] md:h-[550px] rounded-3xl overflow-hidden group">
+            <div class="relative h-[500px] md:h-[550px] rounded-3xl overflow-hidden">
                 <img src="figma-prj/draw.png" alt="Floyd Miles" class="absolute inset-0 w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
                 <div class="absolute bottom-6 left-6 text-white">
@@ -1198,7 +1211,7 @@
             </div>
 
             <!-- third-img -->
-            <div class="relative h-[500px] md:h-[550px] rounded-3xl overflow-hidden group">
+            <div class="relative h-[500px] md:h-[550px] rounded-3xl overflow-hidden">
                 <img src="https://tower-tech.co.uk/wp-content/uploads/2023/11/it3.webp" alt="Floyd Miles"
                     class="absolute inset-0 w-full h-full object-cover">
                 <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
@@ -1216,13 +1229,13 @@
 
 
 
-    <!--  What our clients say -->
+    <!--  What our clients say (using swiper for left content) -->
     <section class="container mx-auto py-20 px-6">
         <h2 class="text-4xl font-bold mb-12">What our clients say</h2>
 
         <div class="flex flex-col md:flex-row gap-8 items-stretch h-auto">
 
-            <!-- content -->
+            <!-- using swiper content -->
             <div class="swiper mySwiper rounded-3xl bg-[#1e293b] relative">
                 <div class="swiper-wrapper py-5">
                     <div class="swiper-slide rounded-3xl bg-transparent">
@@ -1284,134 +1297,141 @@
                     </div>
                 </div>
             </div>
-            <!-- <div
-                class="md:w-3/5 bg-[#1e293b] md:h-96 lg:h-[500px] text-white p-10  shadow-md rounded-3xl flex flex-col justify-between">
-                <div>
-                    <p class="text-sm uppercase tracking-widest opacity-70 mb-10 text-center">Lorem ipsum dolor . Quos sequi,</p>
-                    <h1 class="md:text-xl lg:text-4xl text-center font-medium lg:leading-snug">
-                        Lorem ipsum dolor sit, amet consectetur <br> amet consectetur adipisicing elit. <br>amet consectetur adipisicing elit. <br> Aperiam voluptate.
-                    </h1>
-                </div>
-                <div class="flex gap-4 mt-10 justify-center">
-                    <button class="p-4 rounded-full bg-white/10 hover:bg-white/20 transition">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                        </svg>
-                    </button>
-                    <button class="p-4 rounded-full bg-blue-600 hover:bg-blue-700 transition">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </button>
-                </div>
-            </div> -->
 
             <!-- video -->
             <div class="md:w-2/5 relative h-96  md:h-96 lg:h-[500px] rounded-3xl shadow-lg overflow-hidden">
-                <video class="w-full max-h-[600px] object-cover object-contain" autoplay muted loop>
+                <video class="w-full h-full object-contain object-cover" autoplay muted loop>
                     <source src="video/design2.mp4" type="video/mp4">
                 </video>
             </div>
 
         </div>
-
-        <!-- <div class="flex h-[500px] flex-col md:flex-row gap-8 border border-green-800">
-
-            <div class=" basis-3/5 bg-[#1e293b] text-white p-10 md:p-16 rounded-3xl flex-1 flex flex-col justify-between">
-                <div>
-                    <p class="text-sm uppercase tracking-widest opacity-70 mb-4">Manuel Rikob • CEO of Intel</p>
-                    <blockquote class="text-2xl md:text-3xl font-medium leading-relaxed">
-                        “Working with Master in me has been an incredibly painless and enjoyable experience.”
-                    </blockquote>
-                </div>
-
-                <div class="flex gap-4 mt-10">
-                    <button class="p-4 rounded-full bg-white/10 hover:bg-white/20 transition cursor-pointer">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                        </svg>
-                    </button>
-                    <button class="p-4 rounded-full bg-blue-600 hover:bg-blue-700 transition cursor-pointer">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <div class=" basis-3/5 border border-blue-400 relative w-full md:flex-1 h-[400px] md:h-auto rounded-3xl overflow-hidden">
-                <iframe class="absolute top-0 left-0 w-full h-full"
-                    src="https://www.youtube.com/embed/UJD_rmzlshk?si=xM7lbjurWIDXd_yD" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
-            </div>
-        </div> -->
     </section>
     <!--  What our clients say  -->
 
 
 
-    <!-- Frequently asked Questions -->
-    <section class="container mx-auto py-16 px-6">
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+    <!-- Frequently asked Questions using disyUI -->
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-4xl md:text-5xl font-semibold mb-10">
+            Frequently asked Questions
+        </h2>
 
-            <div class="space-y-4">
-                <div
-                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-center cursor-pointer hover:border-blue-200 transition-all">
-                    <div class="flex items-center gap-4">
-                        <span class="text-blue-600 font-bold">01</span>
-                        <span class="text-gray-800 font-medium">How do I create an account on the job board?</span>
-                    </div>
-                    <span class="text-blue-600 text-xl font-bold">+</span>
-                </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- left-content -->
+            <div class="space-y-6">
+                <details class="collapse collapse-plus border border-base-300 rounded-3xl bg-base-100">
+                    <summary class="collapse-title pr-16">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-14 h-14 rounded-full bg-base-200 flex items-center justify-center text-xl font-semibold shrink-0">
+                                01
+                            </div>
 
-                <div
-                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-center cursor-pointer hover:border-blue-200 transition-all">
-                    <div class="flex items-center gap-4">
-                        <span class="text-blue-600 font-bold">02</span>
-                        <span class="text-gray-800 font-medium">How do I apply for a job through the platform?</span>
-                    </div>
-                    <span class="text-blue-600 text-xl font-bold">+</span>
-                </div>
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                How do I create an account on the job board?
+                            </h3>
+                        </div>
+                    </summary>
 
-                <div
-                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-center cursor-pointer hover:border-blue-200 transition-all">
-                    <div class="flex items-center gap-4">
-                        <span class="text-blue-600 font-bold">03</span>
-                        <span class="text-gray-800 font-medium">How can I track the status of my job
-                            applications?</span>
+                    <div class="collapse-content pl-[72px]">
+                        <p class="text-base-content/70">
+                            Click on the Sign Up button and complete the registration form.
+                        </p>
                     </div>
-                    <span class="text-blue-600 text-xl font-bold">+</span>
-                </div>
+                </details>
+
+                <details class="collapse collapse-plus border border-base-300 rounded-3xl bg-base-100">
+                    <summary class="collapse-title pr-16">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-14 h-14 rounded-full bg-base-200 flex items-center justify-center text-xl font-semibold shrink-0">
+                                02
+                            </div>
+
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                How do I apply for a job through the platform?
+                            </h3>
+                        </div>
+                    </summary>
+
+                    <div class="collapse-content pl-[72px]">
+                        <p class="text-base-content/70">
+                            Browse jobs and click the Apply button on the desired listing.
+                        </p>
+                    </div>
+                </details>
+                <details class="collapse collapse-plus border border-base-300 rounded-3xl bg-base-100">
+                    <summary class="collapse-title pr-16">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-14 h-14 rounded-full bg-base-200 flex items-center justify-center text-xl font-semibold shrink-0">
+                                03
+                            </div>
+
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                How can I track the status of my job applications?
+                            </h3>
+                        </div>
+                    </summary>
+
+                    <div class="collapse-content pl-[72px]">
+                        <p class="text-base-content/70">
+                            You can check the status of your applications from your dashboard.
+                        </p>
+                    </div>
+                </details>
+
             </div>
 
-            <div class="sticky top-8">
-                <div class="bg-blue-50 p-8 mb-4 rounded-2xl border border-blue-200 shadow-sm">
-                    <h3 class="font-bold text-lg text-gray-900 mb-3">
-                        How do I create an account on the job board?
-                    </h3>
-                    <p class="text-sm text-gray-600 leading-relaxed">
-                        Use the search bar on the homepage to enter keywords related to your skills,
-                        job title, or preferred location. You can also use the advanced search filters
-                        to narrow down results by industry, job type (full-time, part-time, freelance),
-                        and experience level.
-                    </p>
-                </div>
-                <div
-                    class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 flex justify-between items-center cursor-pointer hover:border-blue-200 transition-all">
-                    <div class="flex items-center gap-4">
-                        <span class="text-blue-600 font-bold">03</span>
-                        <span class="text-gray-800 font-medium">How can I track the status of my job
-                            applications?</span>
-                    </div>
-                    <span class="text-blue-600 text-xl font-bold">+</span>
-                </div>
-            </div>
+            <!-- Right Content -->
+            <div class="space-y-6">
+                <details open class="collapse collapse-plus border border-purple-200 bg-purple-50 rounded-3xl">
+                    <summary class="collapse-title pr-16">
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-14 h-14 rounded-full bg-base-100 flex items-center justify-center text-xl font-semibold shrink-0">
+                                04
+                            </div>
 
+                            <div>
+                                <h3 class="text-xl md:text-2xl font-medium">
+                                    How do I search for jobs effectively?
+                                </h3>
+
+                                <p class="mt-4 text-base-content/70 leading-8">
+                                    Use the search bar on the homepage to enter keywords related to
+                                    your skills, job title, or preferred location. You can also use
+                                    advanced search filters to narrow down results by industry, job
+                                    type, and experience level.
+                                </p>
+                            </div>
+                        </div>
+                    </summary>
+                </details>
+
+                <details class="collapse collapse-plus border border-base-300 rounded-3xl bg-base-100">
+                    <summary class="collapse-title pr-16">
+                        <div class="flex items-center gap-4">
+                            <div
+                                class="w-14 h-14 rounded-full bg-base-200 flex items-center justify-center text-xl font-semibold shrink-0">
+                                05
+                            </div>
+
+                            <h3 class="text-xl md:text-2xl font-medium">
+                                Is there a cost to use the job board, and what features are free?
+                            </h3>
+                        </div>
+                    </summary>
+
+                    <div class="collapse-content pl-[72px]">
+                        <p class="text-base-content/70">
+                            Basic job search and application features are free to use.
+                        </p>
+                    </div>
+                </details>
+            </div>
         </div>
-    </section>
     </section>
     <!-- Frequently asked Questions -->
 
@@ -1420,7 +1440,7 @@
     <!-- Join ambitious  -->
     <section class="container mx-auto py-15 px-6">
         <div
-            class="bg-white rounded-3xl p-10 md:p-20 text-center shadow-lg border border-gray-200 bg-gradient-to-b from-white to-purple-50">
+            class="bg-white rounded-3xl p-10 md:p-20 text-center  border border-purple-80 bg-gradient-to-b from-purple-100 to-purple-20 shadow-md shadow-purple-200">
             <h2 class="text-3xl hidden  md:block text-left md:text-center  md:text-2xl font-bold text-gray-900 mb-4">
                 Join ambitious, amet consectetur adipisicing elit. Quos temporibus eaque.
             </h2>
@@ -1458,12 +1478,13 @@
 
 
     <!-- Footer -->
-    <footer class="container bg-white py-16 px-6">
-        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+    <footer class="container mx-auto py-16 mt-5 px-6 bg-cover bg-center"
+        style="background-image: url('figma-prj/footer.png')">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
 
             <div class="space-y-4">
-                <div class="flex items-center md:text-left gap-2">
-                    <span class="text-white font-bold px-2 py-1 rounded text-lg">MH.</span>
+                <div class="flex items-center text-left gap-2">
+                    <span class=" font-bold px-2 py-1 rounded text-lg">MH.</span>
                     <span class="text-xl font-bold text-gray-900">Masters Hub</span>
                 </div>
                 <p class="text-gray-600 text-sm leading-relaxed">
@@ -1584,5 +1605,4 @@
     </script>
 
 </body>
-
 </html>
